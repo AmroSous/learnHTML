@@ -1,0 +1,27 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+#bar {
+    list-style-type: none;
+    float: left;
+    background-color: #333;
+    width: 100%;
+    padding: 0%;
+}
+#bar li {
+    margin: 0px;
+    padding: 10px 20px;
+    background-color: #333;
+    display: inline-block;
+}
+#bar li:hover {
+    background-color: rgb(20, 227, 220);
+}
+#bar a {
+    text-decoration-line: none;
+    color: white;
+}
+#bar a:hover {
+    color: red;
+}
