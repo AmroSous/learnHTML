@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
     <title>W3School</title>
     <link rel="stylesheet" href="firstStyle.css" />
   </head>
   <body>
-
-    <div class="navigation">
-      <a class="active" href="#Home">Home</a>
-      <a href="#News">News</a>
-      <a href="#Content">Content</a>
-      <a href="#About">About</a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </li>
+    </ul>
+    <div style="width: 100%; height: 1000px">
+      <h3>Dropdown Menu inside a Navigation Bar</h3>
+      <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
     </div>
-    
   </body>
 </html>

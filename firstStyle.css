@@ -1,29 +1,53 @@
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    color: aqua;
-    padding: 5px;
-}
-
-.navigation {
-    background-color: #333;
+    background-color:white;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-}
-
-.navigation a {
+    background-color: #38444d;
+  }
+  
+  li {
     float: left;
-    text-decoration: none;
+  }
+  
+  li a, .dropbtn {	
+    display: inline-block;
+    color: white;
     text-align: center;
     padding: 14px 16px;
-    font-size: 17px;
-    color: #f2f2f2;
-}
-
-.navigation a:hover {
-    background-color: #ddd;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
     color: black;
-}
-
-.navigation a.active {
-    background-color: #04AA6d;
-    color: white;
-}
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
